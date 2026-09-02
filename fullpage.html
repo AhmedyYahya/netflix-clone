@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <header id="header">
+
+        <img src="images/Logonetflix.png" alt="Neflix" width="200px">
+
+        <h1 id="choose">That's all of now !</h1>
+
+    </header>
+
+    <p id="all">All your fav tv shows and movies in your hand</p>
+
+    <div id="container">
+        <div id="incontainer">
+
+            <div class="group">
+                <img src="images/dex.png" alt="">
+                <img src="images/bcs.png" alt="">
+                <img src="images/bb.png" alt="">
+                <img src="images/stranger-things-poster-square.jpg" alt="">
+            </div>
+
+            <div class="group">
+                <img src="images/dex.png" alt="">
+                <img src="images/bcs.png" alt="">
+                <img src="images/bb.png" alt="">
+                <img src="images/stranger-things-poster-square.jpg" alt="">
+            </div>
+
+            <div class="group">
+                <img src="images/dex.png" alt="">
+                <img src="images/bcs.png" alt="">
+                <img src="images/bb.png" alt="">
+                <img src="images/stranger-things-poster-square.jpg" alt="">
+            </div>
+
+            <div class="group">
+                <img src="images/dex.png" alt="">
+                <img src="images/bcs.png" alt="">
+                <img src="images/bb.png" alt="">
+                <img src="images/stranger-things-poster-square.jpg" alt="">
+            </div>
+
+        </div>
+    </div>
+
+    <p id="Fam" style="font-size: 4vh;">Even family Friendly Shows !</p>
+
+    <div id="container2">
+        <div id="incontainer2">
+
+            <div class="group2">
+                <img src="images/advan.png" alt="">
+                <img src="images/regularshow.png" alt="">
+                <img src="images/got.png" alt="">
+            </div>
+
+            <div class="group2">
+                <img src="images/advan.png" alt="">
+                <img src="images/regularshow.png" alt="">
+                <img src="images/got.png" alt="">
+            </div>
+
+            <div class="group2">
+                <img src="images/advan.png" alt="">
+                <img src="images/regularshow.png" alt="">
+                <img src="images/got.png" alt="">
+            </div>
+
+            <div class="group2">
+                <img src="images/advan.png" alt="">
+                <img src="images/regularshow.png" alt="">
+                <img src="images/got.png" alt="">
+            </div>
+
+            <div class="group2">
+                <img src="images/advan.png" alt="">
+                <img src="images/regularshow.png" alt="">
+                <img src="images/got.png" alt="">
+            </div>
+
+            <div class="group2">
+                <img src="images/advan.png" alt="">
+                <img src="images/regularshow.png" alt="">
+                <img src="images/got.png" alt="">
+            </div>
+
+        </div>
+    </div>
+
+    <style>
+
+        * {
+            font-family: 'poppins';
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            flex-direction: column;
+            margin: 0;
+            min-height: 100vh;
+        }
+
+        #header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 2vh;
+            background-color: hsl(0, 3%, 14%);
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            box-shadow: 0 5px hsl(0, 100%, 50%);
+            border-radius: 10px;
+            width: 500px;
+            margin-top: 9px;
+        }
+
+        #all {
+            font-size: 4vh;
+        }
+
+        /* First carousel */
+
+        #container {
+            overflow: hidden;
+            width: 100%;
+            margin-top: 0px;
+        }
+
+        #incontainer {
+            display: flex;
+            width: max-content;
+            gap: 30px;
+            animation: scroll 10s linear infinite;
+        }
+
+        .group {
+            display: flex;
+            gap: 30px;
+            flex-shrink: 0;
+        }
+
+        .group img {
+            width: 230px;
+            height: 230px;
+            object-fit: cover;
+            border-radius: 20px;
+            flex-shrink: 0;
+        }
+
+        @keyframes scroll {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(-25%);
+            }
+        }
+
+        /* Second carousel */
+
+        #container2 {
+            overflow: hidden;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        #incontainer2 {
+            display: flex;
+            width: max-content;
+            gap: 30px;
+            animation: scroll2 10s linear infinite;
+        }
+
+        .group2 {
+            display: flex;
+            gap: 30px;
+            flex-shrink: 0;
+        }
+
+        .group2 img {
+            width: 140px;
+            height: 140px;
+            object-fit: cover;
+            border-radius: 20px;
+            flex-shrink: 0;
+        }
+
+        @keyframes scroll2 {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(-16.666%);
+            }
+        }
+
+    </style>
+
+</body>
+
+</html>

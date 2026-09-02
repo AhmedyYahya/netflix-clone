@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose your plan</title>
+</head>
+<body>
+    <header id="header">
+    <img src="images/Logonetflix.png" alt="Neflix" width="200px">
+    <h1 id="choose">Choose your <br>plaaaaaaan</h1>
+    </header>
+    <div id="plans">
+        <div id="plan1" class="plan">
+            <p>Regular Plan</p>
+            <hr>
+            <p>Quality = 720p (Good)</p>
+            <hr>
+            <p>Sound Quality = Good</p>
+            <hr>
+            <P>how much accs = 1</P>
+            <button id="good" class="btn">Choose</button>
+        </div>
+        <div id="plan2" class="plan">
+            <p>Mid plan</p>
+            <hr>
+            <p>Quality = 1080p (Great)</p>
+            <hr>
+            <p>Sound Quality = Great</p>
+            <hr>
+            <P>USD 13.99$</P>
+            <button id="great" class="btn">Choose</button>
+        </div>
+        <div id="plan3" class="plan">
+            <p>Yara phonk plan</p>
+            <hr>
+            <p>Quality = 4K + HDR</p>
+            <hr>
+            <p>Sound Quality = Crystal</p>
+            <hr>
+            <P>USD 17.99$</P>
+            <button id="amazing" class="btn">Choose</button>
+        </div>
+    </div>
+
+    <style>
+        @import url('https://googleapis.com');
+
+        * {
+            transition: all 0.3s ease;
+        }
+
+        
+        body {
+            font-family: 'Poppins';
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: hsl(0, 0%, 4%);
+            color: white;
+            flex-direction: column;
+        }
+        #header {
+            display: flex;
+            justify-content: space-between;
+            font-size: 2vh;
+            background-color: hsl(0, 3%, 14%);
+            color: white;
+            padding: 30px;
+            max-height: 60px;
+            border: none;
+            box-shadow: 0 5px hsl(0, 100%, 50%);
+            border-radius: 10px;
+            width:500px;
+        }
+        
+        #choose {
+            margin-top: -10px;
+        }
+
+        #plans {
+            display: flex;
+            gap: 50px;
+            color: black;
+            padding: 20px;
+        }
+
+        .plan {
+            width: fit-content;
+            background-color: white;
+            padding: 20px;
+            text-align: start;
+            align-items: center;
+            width: 300px;
+            height: 400px;
+            margin-top: 50px;
+            border-radius: 30px;
+            font-size: 3.0vh;
+            border: 4px solid rgb(203, 97, 97);
+            box-shadow: 0 5px rgb(203, 97, 97);
+        }
+
+        .btn {
+            margin-left: -15px;
+            padding: 20px;
+            border: none;
+            width: 330px;
+            margin-top: 47px;
+            border-radius: 27px;
+            font-size: 3.7vh;
+            background-color: hsl(0, 73%, 45%);
+            color: white;
+            font-weight: bolder;
+        }
+
+        .btn:hover {
+            transform: scale(1.02);
+            background-color: hsl(0, 73%, 40%);
+        }
+
+        .btn:active {
+            transform: scale(0.95);
+            background-color: hsl(0, 100%, 47%);
+        }
+
+    </style>
+    
+    
+    <script>
+        const cheapPlan = document.getElementById("good")
+        const midPlan = document.getElementById("great")
+        const amazingPlan = document.getElementById("amazing")
+
+
+
+        cheapPlan.onclick = function() {
+            window.open("troll.html", "_blank")
+        }
+
+        midPlan.onclick = function() {
+            window.open("fullpage.html", "_blank")
+        }
+        amazingPlan.onclick = function() {
+            window.open("fullpage.html", "_blank")
+        }
+
+    </script>
+</body>
+</html>
